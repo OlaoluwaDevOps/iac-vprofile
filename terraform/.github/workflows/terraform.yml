@@ -1,4 +1,6 @@
 name: "Vprofile IAC"
+
+
 on:
   push:
     branches:
@@ -11,6 +13,8 @@ on:
       - main
     paths:
       - 'terraform/**'
+
+  workflow_dispatch:
 
 env:
  # credentials for deploying to AWS
